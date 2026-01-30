@@ -23,74 +23,82 @@
         }
       ]
     },
-    "languages": [
+    "versions": [
       {
-        "language": "en",
-        "tabs": [
+        "version": "Untitled Version",
+        "languages": [
           {
-            "tab": "Guides",
-            "groups": [
+            "language": "en",
+            "tabs": [
               {
-                "group": "Getting started",
-                "pages": [
-                  "index",
-                  "quickstart",
-                  "development"
+                "tab": "Guides",
+                "groups": [
+                  {
+                    "group": "Getting started",
+                    "pages": [
+                      "index",
+                      "quickstart",
+                      "development"
+                    ]
+                  },
+                  {
+                    "group": "Customization",
+                    "pages": [
+                      "essentials/settings",
+                      "essentials/navigation"
+                    ]
+                  },
+                  {
+                    "group": "Writing content",
+                    "pages": [
+                      "essentials/markdown",
+                      "essentials/code",
+                      "essentials/images",
+                      "essentials/reusable-snippets"
+                    ]
+                  },
+                  {
+                    "group": "AI tools",
+                    "pages": [
+                      "ai-tools/cursor",
+                      "ai-tools/claude-code",
+                      "ai-tools/windsurf"
+                    ]
+                  }
                 ]
               },
               {
-                "group": "Customization",
-                "pages": [
-                  "essentials/settings",
-                  "essentials/navigation"
-                ]
-              },
-              {
-                "group": "Writing content",
-                "pages": [
-                  "essentials/markdown",
-                  "essentials/code",
-                  "essentials/images",
-                  "essentials/reusable-snippets"
-                ]
-              },
-              {
-                "group": "AI tools",
-                "pages": [
-                  "ai-tools/cursor",
-                  "ai-tools/claude-code",
-                  "ai-tools/windsurf"
+                "tab": "API reference",
+                "groups": [
+                  {
+                    "group": "API documentation",
+                    "pages": [
+                      "api-reference/introduction"
+                    ]
+                  },
+                  {
+                    "group": "Endpoint examples",
+                    "pages": [
+                      "api-reference/endpoint/get",
+                      "api-reference/endpoint/create",
+                      "api-reference/endpoint/delete",
+                      "api-reference/endpoint/webhook"
+                    ]
+                  }
                 ]
               }
             ]
           },
           {
-            "tab": "API reference",
-            "groups": [
+            "language": "cn",
+            "tabs": [
               {
-                "group": "API documentation",
-                "pages": [
-                  "api-reference/introduction"
-                ]
+                "tab": "Untitled Tab"
               },
               {
-                "group": "Endpoint examples",
-                "pages": [
-                  "api-reference/endpoint/get",
-                  "api-reference/endpoint/create",
-                  "api-reference/endpoint/delete",
-                  "api-reference/endpoint/webhook"
-                ]
+                "tab": "Untitled Tab"
               }
             ]
-          }
-        ]
-      },
-      {
-        "language": "cn",
-        "tabs": [
-          {
-            "tab": "Untitled Tab"
           }
         ]
       }
