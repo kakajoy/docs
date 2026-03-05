@@ -1,0 +1,472 @@
+---
+title: "组件参考"
+description: "Mintlify 全部组件速查手册"
+icon: "puzzle-piece"
+---
+
+# 组件参考手册
+
+复制下方代码到你的文档中即可使用。
+
+---
+
+## 一、卡片类组件
+
+### Card 基础卡片
+
+<Card title="卡片标题" icon="plane" href="/travelling/2026/shanxi">
+  这是卡片描述，点击可跳转
+</Card>
+
+```mdx
+<Card title="标题" icon="图标名" href="/链接">
+  描述内容
+</Card>
+```
+
+### Card 横向卡片
+
+<Card title="横向卡片" icon="map" href="#" horizontal>
+  横向布局更紧凑
+</Card>
+
+```mdx
+<Card title="标题" icon="图标" href="#" horizontal>
+  描述
+</Card>
+```
+
+### Card 带图片
+
+<Card title="带图片的卡片" img="/images/hero-light.png">
+  可以添加顶部图片
+</Card>
+
+```mdx
+<Card title="标题" img="/images/xxx.png">
+  描述
+</Card>
+```
+
+### Columns 多列布局
+
+<Columns cols={2}>
+  <Card title="左边" icon="map">左边内容</Card>
+  <Card title="右边" icon="camera">右边内容</Card>
+</Columns>
+
+```mdx
+<Columns cols={2}>
+  <Card title="左边">内容</Card>
+  <Card title="右边">内容</Card>
+</Columns>
+```
+
+<Columns cols={3}>
+  <Card title="第一列" icon="1">内容</Card>
+  <Card title="第二列" icon="2">内容</Card>
+  <Card title="第三列" icon="3">内容</Card>
+</Columns>
+
+```mdx
+<Columns cols={3}>
+  <!-- 支持 1-4 列 -->
+</Columns>
+```
+
+---
+
+## 二、提示框组件 Callout
+
+### Note 普通提示
+
+<Note>这是一条普通提示信息</Note>
+
+```mdx
+<Note>提示内容</Note>
+```
+
+### Tip 小技巧
+
+<Tip>这是一个实用小技巧</Tip>
+
+```mdx
+<Tip>技巧内容</Tip>
+```
+
+### Info 说明信息
+
+<Info>这是说明信息</Info>
+
+```mdx
+<Info>说明内容</Info>
+```
+
+### Warning 警告
+
+<Warning>这是警告信息，请注意！</Warning>
+
+```mdx
+<Warning>警告内容</Warning>
+```
+
+### Check 成功/完成
+
+<Check>操作已成功完成</Check>
+
+```mdx
+<Check>成功内容</Check>
+```
+
+### Danger 危险
+
+<Danger>危险操作，请谨慎！</Danger>
+
+```mdx
+<Danger>危险内容</Danger>
+```
+
+---
+
+## 三、折叠面板 Accordion
+
+### 单个折叠
+
+<Accordion title="点击展开查看详情">
+  这里是隐藏的详细内容。
+  
+  可以包含任何内容，包括图片、代码等。
+</Accordion>
+
+```mdx
+<Accordion title="标题">
+  隐藏内容
+</Accordion>
+```
+
+### 默认展开
+
+<Accordion title="默认展开的面板" defaultOpen>
+  这个面板默认是展开状态
+</Accordion>
+
+```mdx
+<Accordion title="标题" defaultOpen>
+  内容
+</Accordion>
+```
+
+### 带图标
+
+<Accordion title="带图标的面板" icon="star">
+  可以添加图标让标题更醒目
+</Accordion>
+
+```mdx
+<Accordion title="标题" icon="star">
+  内容
+</Accordion>
+```
+
+### 折叠组 AccordionGroup
+
+<AccordionGroup>
+  <Accordion title="问题一：如何开始？">
+    这是问题一的回答
+  </Accordion>
+  <Accordion title="问题二：有什么技巧？">
+    这是问题二的回答
+  </Accordion>
+  <Accordion title="问题三：遇到问题怎么办？">
+    这是问题三的回答
+  </Accordion>
+</AccordionGroup>
+
+```mdx
+<AccordionGroup>
+  <Accordion title="问题一">回答一</Accordion>
+  <Accordion title="问题二">回答二</Accordion>
+</AccordionGroup>
+```
+
+---
+
+## 四、标签页 Tabs
+
+### 基础标签页
+
+<Tabs>
+  <Tab title="白天行程">
+    上午：参观景点
+    下午：品尝美食
+  </Tab>
+  <Tab title="晚上活动">
+    夜游古城
+    观看演出
+  </Tab>
+</Tabs>
+
+```mdx
+<Tabs>
+  <Tab title="标签1">内容1</Tab>
+  <Tab title="标签2">内容2</Tab>
+</Tabs>
+```
+
+### 带图标的标签
+
+<Tabs>
+  <Tab title="美食" icon="utensils">
+    当地特色美食推荐
+  </Tab>
+  <Tab title="住宿" icon="bed">
+    酒店民宿推荐
+  </Tab>
+  <Tab title="交通" icon="car">
+    出行方式指南
+  </Tab>
+</Tabs>
+
+```mdx
+<Tabs>
+  <Tab title="标签" icon="图标名">内容</Tab>
+</Tabs>
+```
+
+---
+
+## 五、步骤引导 Steps
+
+<Steps>
+  <Step title="规划行程">
+    确定目的地和出行日期
+  </Step>
+  <Step title="预订交通">
+    购买机票或火车票
+  </Step>
+  <Step title="预订住宿">
+    选择合适的酒店或民宿
+  </Step>
+  <Step title="准备行李">
+    根据天气和行程准备物品
+  </Step>
+  <Step title="出发">
+    开始愉快的旅程！
+  </Step>
+</Steps>
+
+```mdx
+<Steps>
+  <Step title="第一步">
+    步骤内容
+  </Step>
+  <Step title="第二步">
+    步骤内容
+  </Step>
+</Steps>
+```
+
+---
+
+## 六、代码展示 CodeGroup
+
+### 多语言代码对比
+
+<CodeGroup>
+```bash 安装命令
+npm install mintlify
+```
+
+```bash 运行命令
+mint dev
+```
+</CodeGroup>
+
+````mdx
+<CodeGroup>
+```bash 标签名1
+代码1
+```
+
+```bash 标签名2
+代码2
+```
+</CodeGroup>
+````
+
+---
+
+## 七、图片展示 Frame
+
+### 带说明的图片
+
+<Frame caption="这是图片的说明文字">
+  ![示例图片](/images/hero-light.png)
+</Frame>
+
+```mdx
+<Frame caption="说明文字">
+  ![描述](/images/xxx.png)
+</Frame>
+```
+
+### 带提示的图片
+
+<Frame caption="图片说明" hint="点击可放大">
+  ![示例](/images/hero-light.png)
+</Frame>
+
+```mdx
+<Frame caption="说明" hint="提示文字">
+  ![描述](/images/xxx.png)
+</Frame>
+```
+
+---
+
+## 八、嵌入内容
+
+### 视频嵌入
+
+```mdx
+<iframe 
+  width="560" 
+  height="315" 
+  src="https://www.youtube.com/embed/VIDEO_ID" 
+  title="视频标题"
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+  allowfullscreen
+/>
+```
+
+### Bilibili 视频
+
+```mdx
+<iframe 
+  src="//player.bilibili.com/player.html?bvid=BV号" 
+  width="100%" 
+  height="400"
+  scrolling="no" 
+  border="0" 
+  frameborder="no" 
+  framespacing="0" 
+  allowfullscreen="true"
+/>
+```
+
+---
+
+## 九、表格
+
+| 地点 | 推荐指数 | 最佳季节 |
+|------|:--------:|----------|
+| 大理 | ⭐⭐⭐⭐⭐ | 春秋 |
+| 丽江 | ⭐⭐⭐⭐ | 全年 |
+| 泸沽湖 | ⭐⭐⭐⭐⭐ | 夏秋 |
+
+```markdown
+| 列1 | 列2 | 列3 |
+|-----|:---:|-----|
+| 左对齐 | 居中 | 默认 |
+```
+
+---
+
+## 十、常用图标速查
+
+### 旅行相关
+| 图标名 | 含义 |
+|--------|------|
+| `plane` | 飞机 |
+| `train` | 火车 |
+| `car` | 汽车 |
+| `bus` | 巴士 |
+| `ship` | 轮船 |
+| `bicycle` | 自行车 |
+
+### 景点相关
+| 图标名 | 含义 |
+|--------|------|
+| `mountain` | 山 |
+| `water` | 水/湖 |
+| `tree` | 树/森林 |
+| `building` | 建筑 |
+| `landmark` | 地标 |
+| `temple` | 寺庙 |
+
+### 生活相关
+| 图标名 | 含义 |
+|--------|------|
+| `utensils` | 餐饮 |
+| `bed` | 住宿 |
+| `camera` | 摄影 |
+| `map` | 地图 |
+| `compass` | 指南针 |
+| `suitcase` | 行李箱 |
+
+### 通用图标
+| 图标名 | 含义 |
+|--------|------|
+| `star` | 星星/推荐 |
+| `heart` | 喜欢 |
+| `bookmark` | 收藏 |
+| `lightbulb` | 想法 |
+| `clock` | 时间 |
+| `calendar` | 日期 |
+| `sun` | 晴天 |
+| `cloud` | 多云 |
+| `umbrella` | 雨天 |
+
+---
+
+## 十一、Markdown 基础语法
+
+### 标题
+```markdown
+# 一级标题
+## 二级标题
+### 三级标题
+#### 四级标题
+```
+
+### 文字样式
+```markdown
+**加粗文字**
+*斜体文字*
+~~删除线~~
+`行内代码`
+```
+
+### 列表
+```markdown
+- 无序列表项
+- 无序列表项
+  - 嵌套列表
+
+1. 有序列表
+2. 有序列表
+```
+
+### 引用
+```markdown
+> 这是引用文字
+> 可以多行
+```
+
+### 链接和图片
+```markdown
+[链接文字](https://example.com)
+![图片描述](/images/xxx.png)
+```
+
+### 分割线
+```markdown
+---
+```
+
+### 任务列表
+```markdown
+- [x] 已完成
+- [ ] 未完成
+```
